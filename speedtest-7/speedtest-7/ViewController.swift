@@ -17,12 +17,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func go(_ sender: UIButton) {if nameField.text!.count >= 2{
-         performSegue(withIdentifier: "details", sender: nil)
+        let name = nameField.text
+         performSegue(withIdentifier: "details", sender: name)
         }
-       
-    }
+        
+      func  prepare(for segue : UIStoryboardSegue, sender: Any?){
+            if segue.identifier == "details"{
+                let name = sender as!String
+                let vc = segue.destination as! detailsVC
+                vc.name = name
+            }
+            
+           
     // Hint: `performSegue` is the way
     
 
 }
+}
 
+}

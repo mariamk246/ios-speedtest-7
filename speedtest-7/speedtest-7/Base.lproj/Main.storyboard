@@ -65,8 +65,8 @@ Cg
                                     <fragment content="التمرين السريع يطلب منك فقط إن كتبت اسمك يتم نقلك إلى الصفحة التالية. إن لم تكتب اسمك بالشكل الصحيح، لن يتم نقلك">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="message" size="11"/>
-                                            <font key="NSOriginalFont" metaFont="message" size="11"/>
+                                            <font key="NSFont" metaFont="label" size="11"/>
+                                            <font key="NSOriginalFont" metaFont="label" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" paragraphSpacingBefore="6" lineHeightMultiple="1.5" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -75,7 +75,7 @@ Cg
                                     <fragment content=" إلا إذا أدخلت اسم مكون من حرفين وأكثر">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="message" size="11"/>
+                                            <font key="NSFont" metaFont="label" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" paragraphSpacingBefore="6" lineHeightMultiple="1.5" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -86,8 +86,8 @@ Cg
 </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="message" size="11"/>
-                                            <font key="NSOriginalFont" metaFont="message" size="11"/>
+                                            <font key="NSFont" metaFont="label" size="11"/>
+                                            <font key="NSOriginalFont" metaFont="label" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" paragraphSpacingBefore="6" lineHeightMultiple="1.5" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -97,7 +97,7 @@ Cg
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="11" name="AppleColorEmoji"/>
-                                            <font key="NSOriginalFont" metaFont="message" size="11"/>
+                                            <font key="NSOriginalFont" metaFont="label" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -108,8 +108,8 @@ Cg
 التمرين الأول Classwork 1 رح يكون إذا كتبت اسمك بالصفحة الأولى يقولك مرحباً باسمك بالصفحة الثانية. يعني من الآخر، انقل اسمك الصفحة الثانية</string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="message" size="11"/>
-                                            <font key="NSOriginalFont" metaFont="message" size="11"/>
+                                            <font key="NSFont" metaFont="label" size="11"/>
+                                            <font key="NSOriginalFont" metaFont="label" size="11"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -187,10 +187,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="852.17391304347836" y="98.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailsVC-->
         <scene sceneID="Zxe-0s-px6">
             <objects>
-                <viewController id="dlM-8a-Plg" sceneMemberID="viewController">
+                <viewController id="dlM-8a-Plg" customClass="detailsVC" customModule="speedtest_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RoV-Tz-fIb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,6 +214,9 @@ Cg
                         <viewLayoutGuide key="safeArea" id="D0E-r7-42x"/>
                     </view>
                     <navigationItem key="navigationItem" id="E9h-n9-IrO"/>
+                    <connections>
+                        <outlet property="nameField" destination="D5Y-cU-Ivv" id="Gkk-Dv-rGk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atr-XV-rX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
