@@ -155,6 +155,9 @@ Cg
                                         <size key="value" width="4" height="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6B3-xK-tI6"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="قم بكتابة اسمك" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0V-Yg-VrJ">
                                 <rect key="frame" x="20" y="264" width="374" height="34"/>
@@ -176,7 +179,8 @@ Cg
                     </view>
                     <navigationItem key="navigationItem" id="IBD-Sz-RWx"/>
                     <connections>
-                        <segue destination="dlM-8a-Plg" kind="show" id="P8J-NO-rc6"/>
+                        <outlet property="nameField" destination="g0V-Yg-VrJ" id="Hyx-df-A5E"/>
+                        <segue destination="dlM-8a-Plg" kind="show" identifier="details" id="P8J-NO-rc6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
